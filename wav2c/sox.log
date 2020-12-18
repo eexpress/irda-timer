@@ -1,0 +1,21 @@
+audacity trim first
+● mplayer -vo null -ao pcm ok-ray.mp3 
+● sox audiodump.wav -c 1 -b 8 -r 8k ok-ray.wav
+● ./wav2c ok-ray-cut.wav -c 1 -b 8 -r 8k ok-ray-cut.c
+● ll ok-ray-cut.wav ok-ray-cut.c
+-rw-rw-r-- 1 eexp eexp  14K  3月  4 11:34 ok-ray-cut.c
+-rw-rw-r-- 1 eexp eexp 3.6K  3月  4 11:25 ok-ray-cut.wav
+
+sox in.wav -c 1 -b 8 -r 8k out.wav
+
+file:  RIFF (little-endian) data, WAVE audio, Microsoft PCM, 8 bit, mono 8000 Hz
+
+-V = verbose
+-c 1= number of channels of destination file: 1
+-A = encoding of destination file: a-law
+-t .wav = file format of destination file: WAVE
+-r 8000= sampling rate of destination file: 8kHz
+-b 8 = The  number  of  bits in each encoded sample.
+# ● 2013-03-04_11:42:30
+http://www.fromtexttospeech.com/
+

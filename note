@@ -1,0 +1,5 @@
+# ●2016-08-15_20:27:34
+Bus 003 Device 003: ID 16c0:05dc Van Ooijen Technische Informatica shared ID for use with libusb
+
+#已经认usbasp设备了？估计是avrdude附加了udev规则？下次验证下。
+
